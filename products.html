@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+
+    <nav class="nav">
+        <a href="./index.html">
+            <img src="./img/logo.png" alt="La Bufanda Mágica Logo" class="logo">
+        </a>
+        <div class="menu__mobile">
+            <button class="menu__mobile--item"><img src="./img/menu_hamburguesa.png" alt="Menu Hamburguesa"></button>
+            <button class="menu__mobile--item"><img src="./img/mobile_logo.png" alt="Mobile logo"></button>
+            <a href="./login.html">
+                <img src="./img/user_icon.png" alt="La Bufanda Mágica User Icon" class="loginUser">
+            </a>
+            <a href="./cart.html">
+                <img src="./img/cart.png" alt="La Bufanda Mágica User Icon" class="loginUser">
+            </a>
+        </div>
+        <div class="menu__container">
+            <ul class="menu">
+                <li class="menu__item">
+                    <a href="./index.html">INICIO</a>
+                </li>
+                <li class="menu__item"><a href="#">TOP</a></li>
+                <li class="menu__item"><a href="#">GALERÍA</a></li>
+                <li class="menu__item"><a href="#">TUTORIAL</a></li>
+                <li class="menu__item"><a href="#">AYUDA</a></li>
+                <li id="Ahidden" class="auth hidden"><a href="./create.html">AÑADIR PRODUCTO</a></li>
+            </ul>
+        </div>
+        <div class="menu__icons">
+            <a href="./cart.html">
+                <img src="./img/cart.png" alt="La Bufanda Mágica Carrito Icon" class="cart">
+            </a>
+            <a href="./login.html">
+                <img src="./img/user_icon.png" alt="La Bufanda Mágica User Icon" class="loginUser">
+            </a>
+        </div>
+    </nav>
+
+    <div class="filters">
+        <a>
+            <img src="./img/filterBtn.png" alt="filtros" class="filter">
+        </a>
+        <div>
+            <label for="categories">Tipo de prenda: </label>
+            <select name="categories" id="categories">
+                <option value="">Todas</option>
+                <option value="scarfs">Bufandas</option>
+                <option value="sweaters">Sweaters</option>
+                <option value="pants">Pantalones</option>
+                <option value="skirts">Faldas</option>
+                <option value="shoes">Zapatos</option>
+            </select>
+        </div>
+        <div>
+            <label for="orderBy">Ordenar: </label>
+            <select name="orderBy" id="orderBy">
+                <option value="">Ninguno</option>
+                <option value="asc">Ascendente</option>
+                <option value="desc">Descendente</option>
+            </select>
+        </div>
+    </div>
+
+    <section class="section__item">
+        <img src="./img/product_banner.png" alt="product_banner">
+    </section>
+    <div class="products" id="products">
+    </div>
+    <script src="./js/utils.js"></script>
+    <script type="module" src="./js/app.js"></script>
+
+    <footer class="footer">
+        <div class="newsletter">
+            <h2>SUSCRÍBETE A NUESTRA NEWS LETTER</h2>
+            <form class="newsletter__form">
+                <label for="email">Dirección de correo electrónico</label>
+                <input type="email">
+                <input type="submit" value="SUSCRÍBETE">
+            </form>
+        </div>
+        <div>
+            <nav class="footer__info">
+                <ul class="footer__info--item">
+                    <h3>COMPAÑÍA</h3>
+                    <li><a href="#">Acerca de</li>
+                    <li><a href="#">Expertos</a></li>
+                </ul>
+                <ul class="footer__info--item">
+                    <h3>ATENCIÓN AL CLIENTE</h3>
+                    <li><a href="#">Contáctanos</a></li>
+                    <li><a href="#">Mi cuenta</a></li>
+                    <li><a href="#">Tiendas</a></li>
+                </ul>
+                <ul class="footer__info--item">
+                    <h3>EXPLORAR MÁS</h3>
+                    <li><a href="#">Revista</a></li>
+                    <li><a href="#">Herramientas y consultas</a></li>
+                    <li><a href="#">#BufandaMágica</a></li>
+                </ul>
+            </nav>
+        </div>
+        <nav>
+            <ul class="footer__menu">
+                <li><img src="./img/social_media.png" alt="Redes Sociales"></li>
+                <li>app iOS</li>
+                <li>app Android</li>
+                <li>Colombia | Español</li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>

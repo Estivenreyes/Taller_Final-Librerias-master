@@ -1,0 +1,214 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.nav {
+    background-color: rgb(255, 255, 255);
+    padding: 26px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+.menu{
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;   
+}
+.menu__mobile{
+    display: none;
+    background-color: rgb(255, 255, 255);
+    justify-content: space-between;
+    align-items: center; 
+}
+.menu__mobile--item{
+    background-color: white;
+    border: none;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.menu__container{
+    display: flex;
+}
+
+.menu__icons{
+    width: 7%;
+    justify-content: space-between;
+    display: flex;
+}
+
+.footer__menu{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;   
+}
+.menu li a{
+    margin: 20px; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    color: #000;
+
+}
+
+.footer__menu li{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: solid 1px rgb(177, 177, 177);
+    width: 25%;
+    height: 60px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter{
+    display: flex;
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    align-items: center;
+    flex-direction: column;
+}
+.newsletter input{
+    border: none;
+    background-color: white;
+    border-bottom: 2px solid #000000;
+}
+.newsletter input[type=submit]{
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: black;
+}
+
+.footer__info{
+    display: flex;
+    justify-content: center;
+}
+
+.swiper-wrapper{
+    width: 100%;
+}
+
+
+.slider__item{
+    color: white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section__item{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(255, 255, 255);
+    position: relative;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section__item img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    object-fit: cover;
+    z-index: 1;
+}
+.section__item-text--contrast{
+    color: black;
+}
+.section__item-text{
+    z-index: 6;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.section__item a{
+    text-decoration: none;
+    color: black;
+}
+
+.section__item-text h3{
+    font-size: 3em;
+}
+.newsletter {
+    padding: 40px;
+}
+.newsletter h2{
+    margin-bottom: 20px;
+}
+footer{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.footer__info{
+    margin-bottom: 30px;
+}
+.footer__info li{
+    list-style: none;
+    padding: 10px;
+}
+.footer__info li a{
+    color: black;
+    text-decoration: none;
+}
+.footer__info--item {
+    list-style: none;
+    padding: 0 30px;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    right:10px;
+    padding: 30px;
+    color: rgb(255, 255, 255) !important;
+    fill: white !important;
+    stroke: white !important;
+}

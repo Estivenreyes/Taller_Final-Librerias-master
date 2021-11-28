@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <nav class="nav">
+        <a href="./index.html">
+            <img src="./img/logo.png" alt="La Bufanda Mágica Logo" class="logo">
+        </a>
+        <div class="menu__mobile">
+            <button class="menu__mobile--item"><img src="./img/menu_hamburguesa.png" alt="Menu Hamburguesa"></button>
+            <button class="menu__mobile--item"><img src="./img/mobile_logo.png" alt="Mobile logo"></button>
+            <a href="./login.html">
+                <img src="./img/user_icon.png" alt="La Bufanda Mágica User Icon" class="loginUser">
+            </a>
+            <a href="./cart.html">
+                <img src="./img/cart.png" alt="La Bufanda Mágica User Icon" class="loginUser">
+            </a>
+        </div>
+        <div class="menu__container">
+            <ul class="menu">
+                <li class="menu__item">
+                    <a href="./index.html">INICIO</a>
+                </li>
+                <li class="menu__item"><a href="#">TOP</a></li>
+                <li class="menu__item"><a href="./products.html">GALERÍA</a></li>
+                <li class="menu__item"><a href="#">TUTORIAL</a></li>
+                <li class="menu__item"><a href="#">AYUDA</a></li>
+            </ul>
+        </div>
+        <div class="menu__icons">
+            <a href="#">
+                <img src="./img/cart.png" alt="La Bufanda Mágica Carrito Icon" class="cart">
+            </a>
+            <a href="./login.html">
+                <img src="./img/user_icon.png" alt="La Bufanda Mágica User Icon" class="loginUser">
+            </a>
+        </div>
+    </nav>
+
+    <h2 class="cart__title">Carrito de compras</h2>
+    <div class="checkout__section">
+        <section class="checkout__products">
+            <ul class="products" id="cart"></ul>
+            <h3 class="total" id="total"></h3>
+        </section>
+
+        <section class="checkout__info">
+            <h2 class="cart__title">Completa los datos del pedido</h2>
+            <form id="checkout">
+                <input type="text" name="name" placeholder="Nombre completo">
+                <input type="text" name="city" placeholder="Cuidad">
+                <input type="text" name="address" placeholder="Dirección">
+                <select name="payment">
+                    <option value="contraentrega">Pago contra entrega</option>
+                    <option value="pse">PSE</option>
+                </select>
+                <input type="submit" value="COMPLETAR COMPRA">
+            </form>
+            <button id="autofill">RELLENAR CON LOS DATOS DEL USUARIO</button>
+        </section>
+    </div>
+
+    <script src="./js/utils.js"></script>
+    <script type="module" src="./js/cart.js"></script>
+</body>
+
+</html>
