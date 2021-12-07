@@ -627,12 +627,37 @@
         font-size: 2.5vmin;
     }
 }
-.demo {
-    .cloth {
-        cursor: pointer;
-        position: absolute;
-        top: 80px;
-        left: 50px;
-        overflow: visible;
+
+.options {
+    display: flex;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana,
+        sans-serif;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+    .instruction{
+        width: 30%;
+    }
+    .demo {
+        display: flex;
+        justify-content: center;
+        width: 20%;
+        align-items: center;
+        .cloth {
+            cursor: pointer;
+            position: absolute;
+            overflow: visible;
+            margin-left: 42px;
+            margin-top: 72px;
+        }
+    }
+    .colors {
+        list-style: none;
+        display: flex;
+        width: 30%;
+        justify-content: space-evenly;
+        &__option{
+            cursor: pointer;
+        }
     }
 }
