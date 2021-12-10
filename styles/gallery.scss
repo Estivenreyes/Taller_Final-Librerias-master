@@ -46,6 +46,43 @@
         justify-content: center;
         height: calc(100vh - 103px);
     }
+
+    &__modal {
+        background-color: white;
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 103px);
+        background-color: rgba($color: black, $alpha: 0.7);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &__img {
+            height: 80%;
+        }
+
+        &__close {
+            position: absolute;
+            width: 30px;
+            top: 40px;
+            right: 40px;
+            cursor: pointer;
+        }
+    }
+
+    &__buttonD {
+        display: flex;
+    }
+
+    &__button {
+        display: flex;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 8px;
+        background-color: black;
+    }
 }
 
 @keyframes rotate {
@@ -56,4 +93,12 @@
     100% {
         transform: perspective(1000px) rotateY(360deg);
     }
+}
+
+.open {
+    display: flex;
+}
+
+.close {
+    display: none;
 }

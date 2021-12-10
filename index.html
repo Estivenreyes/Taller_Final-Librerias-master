@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./styles/menu.css">
     <link rel="stylesheet" href="./styles/mobile.css">
+    <link rel="stylesheet" href="./styles/gallery.css">
 </head>
 
 <body>
@@ -97,6 +98,46 @@
         <img src="./img/colores_back.png" alt="banner_img">
     </section>
 
+
+    <article class="gallery__container">
+
+        <div class="gallery">
+
+            <span style="--i:1;"><img src="./img/product_1_1.png" alt=""></span>
+
+            <span style="--i:2;"><img src="./img/product_1_2.png" alt=""></span>
+
+            <span style="--i:3;"><img src="./img/product_1_3.png" alt=""></span>
+
+            <span style="--i:4;"><img src="./img/product_2_1.png" alt=""></span>
+
+            <span style="--i:5;"><img src="./img/product_2_3.png" alt=""></span>
+
+            <span style="--i:6;"><img src="./img/product_3_1.png" alt=""></span>
+
+            <span style="--i:7;"><img src="./img/product_3_2.png" alt=""></span>
+
+            <span style="--i:8;"><img src="./img/product_3_3.png" alt=""></span>
+
+
+
+        </div>
+
+        <section class="gallery__modal close">
+            <img class="gallery__modal__img" src="./img/product_2_3.png" alt="">
+
+            <img class="gallery__modal__close" src="./img/close_white_24dp.svg" alt="">
+        </section>
+
+    </article>
+
+
+    <section class="gallery__modal close">
+        <img class="gallery__modal__img" src="./img/product_2_3.png" alt="">
+
+        <img class="gallery__modal__close" src="./img/close_white_24dp.svg" alt="">
+    </section>
+
     <footer>
         <div class="newsletter">
             <h2>SUSCRÍBETE A NUESTRA NEWS LETTER</h2>
@@ -151,6 +192,9 @@
             },
         });
     </script>
+
+    <script src="./js/gallery.js"></script>
+
 </body>
 
 </html>
